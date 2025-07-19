@@ -1,0 +1,42 @@
+.App-header {
+  position: relative;
+  max-height: 14vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.App-header p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:5vmin;
+  z-index: 2;
+  justify-self: right;
+}
+
+.App-header img {
+  height: 14vmin;
+  pointer-events: none;
+  padding: 4vmin;
+  z-index: 2;
+}
+
+.App-header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter:brightness(0.3);
+  z-index: 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
