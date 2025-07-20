@@ -1,0 +1,56 @@
+.welcome-wrapper {
+  position: relative;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+}
+
+.welcome-wrapper-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/gameboardclose.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4) contrast(1.1) blur(4px);
+  z-index: 1;
+}
+
+.welcome-wrapper-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  text-align: left;
+}
+
+.welcome-wrapper-content h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-wrapper-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .welcome-wrapper-content h1 {
+    font-size: 3rem;
+  }
+  .welcome-wrapper-content p {
+    font-size: 1.2rem;
+  }
+}
