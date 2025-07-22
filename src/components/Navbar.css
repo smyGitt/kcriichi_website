@@ -1,26 +1,28 @@
 .navbar {
-    background-color: #ffffff;
-    overflow: hidden;
+    border-radius: 16px;
+    width: 100%;
+    font-size:100%;
+    font-variant-caps: all-small-caps;
+    font-weight: lighter;
 }
 
-
 .navbar ul {
-    display: flex;
-    justify-content: right;
+    display: grid;
+    grid-template-columns: auto;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    table-layout:fixed;
+    grid-auto-flow: column;
+    justify-content: space-between;
 }
 
 .navbar li a {
-    display: block;
-    color: rgb(80, 80, 80);
+    display:flex;
     text-decoration: none;
-    padding: 14px 20px;
-    border-radius: 2px;
+    color:#1b1b1b;
+    padding: 3px;
 }
 
 .navbar li a:hover {
     text-decoration: underline;
-    color:#1b1b1b
+    color:#1b1b1b;
 }

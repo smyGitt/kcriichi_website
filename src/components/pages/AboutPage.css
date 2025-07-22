@@ -1,14 +1,27 @@
 .aboutpage {
     text-align: left;
     color: #272727;
-    margin-left: 10vw;
-    margin-right: 10vw;
     margin-top:3rem;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    
+}
+
+.aboutpage p {
+    text-indent: 2em;
+    padding-left: 4%;
+    padding-bottom: 4%;
+}
+
+.aboutpage-presidentName p {
+    text-indent: 0em;
+    padding-left: 0%;
+    padding-bottom: 0%;
 }
 
 .aboutpage h1{
-    text-decoration:overline;
     padding-left: 14.3rem;
+    text-decoration:overline;
 }
 
 .aboutpage h3{
@@ -29,9 +42,6 @@
 .aboutpage-image-wrapper img {
     width: 5cm;
     height: auto;
-    border-style:dashed;
-    border-color: #961e1e;
-    border-width: 0.2rem;
 }
 
 .aboutpage-image-wrapper p {

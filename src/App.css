@@ -1,13 +1,23 @@
 .App {
-  text-align: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  table-layout: fixed;
+  grid-auto-flow: row;
+  justify-content: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
   padding-top: 3vh;
+}
+
+.App * {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-color: rgb(119, 119, 119);
 }
 
 @media (max-width:800px) {
   .App {
     margin-left: 4vw;
-    margin-right:4vw;
+    margin-right: 4vw;
   }
 }
