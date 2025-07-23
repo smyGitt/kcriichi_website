@@ -1,5 +1,4 @@
 .navbar {
-    border-radius: 16px;
     width: 100%;
     font-size:100%;
     font-variant-caps: all-small-caps;
@@ -9,10 +8,11 @@
 .navbar ul {
     display: grid;
     grid-template-columns: auto;
-    list-style-type: none;
-    table-layout:fixed;
     grid-auto-flow: column;
     justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar li a {
