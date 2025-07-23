@@ -38,18 +38,22 @@
     color: rgb(69, 69, 69);
 }
 
+.footer-social {
+    padding-left: 25%;
+}
+
 .footer-social-icon-wrapper {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.footer-social h2 {
+.footer-social h3 {
     text-wrap:nowrap;
 }
 
 .footer-social img{
-    width: 3rem;
+    width: 2.3rem;
 }

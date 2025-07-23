@@ -17,11 +17,11 @@ export default function Footer() {
             </div>
             <div className='footer-lower-half'>
                 <div className='footer-mission-statement'>
-                    <h2>Our Mission</h2>
+                    <h3>Our Mission</h3>
                     <p>We are a group that plays specifically Japanese (Riichi) Mahjong. Whether you are a seasoned player or someone who wishes to learn more about the game, we welcome all players to join us at our public meet-ups or through our socials.</p>
                 </div>
                 <div className='footer-social'>
-                    <h2>Reach out to us!</h2>
+                    <h3>Reach out to us!</h3>
                     <div className='footer-social-icon-wrapper'>
                     <a href='https://www.instagram.com/kc_riichi/?hl=en'>
                         <img src={instagramLogo} alt="Link to KCRM instagram" />
