@@ -1,6 +1,7 @@
 import "./InfoBoard.css";
 import { Link } from "react-router-dom";
 import testImg from '../assets/gameboardclose.png'
+import presidentImg from '../assets/mrpresident.png'
 
 // TODO: test if varying lengths affect the layout.
 export default function InfoBoard(props) {
@@ -39,9 +40,16 @@ export default function InfoBoard(props) {
         event_page_address: 'second-sample-event',
         event_date: 'July 6, 2025'
     }
-    const sample_event_array = [sample_event,another_sample_event,sample_event];
+    const new_sample_event = {
+        event_title: 'First Event!',
+        event_description_brief: 'All developers are encoureaged to attend this amazing event! We have some fun things to play with, and none other. This would be a great time to discuss future plans, as well as go over our past mistakes.',
+        event_thumbnail_src: presidentImg,
+        event_page_address: 'major-event',
+        event_date: 'July 32, 2025'
+    }
+    const sample_event_array = [sample_event,another_sample_event,new_sample_event,another_sample_event,sample_event,another_sample_event,sample_event,another_sample_event,sample_event];
 
-    // TODO: sample_event_array should be replaced with props.contentData when possible.
+    // TODO: sample_event_array should be replaced with props.contentDataArray when possible.
     return (
         <>
             <h1>{props.title}</h1>
@@ -49,7 +57,7 @@ export default function InfoBoard(props) {
                     width: props.width,
                     height:props.height,
             }}>
-                {sample_event_array.map((singleData, index) => <InfoSingle {...singleData} />)}
+                {sample_event_array.slice(0,props.cardCount).map((singleData, index) => <InfoSingle key={index} {...singleData} />)}
             </div>
         </>
     );

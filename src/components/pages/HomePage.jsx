@@ -10,13 +10,13 @@ export default function HomePage() {
         title="Upcoming Events" 
         width='100%' 
         height='26rem'
-        card_count='3'
+        cardCount='3'
         />
       <InfoBoard 
         title="Highlighted News" 
         width='100%' 
         height='26rem'
-        card_count='3'
+        cardCount='3'
         />
     </div>
   );
