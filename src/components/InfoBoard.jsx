@@ -3,27 +3,54 @@ import { Link } from "react-router-dom";
 import testImg from '../assets/gameboardclose.png'
 
 // TODO: test if varying lengths affect the layout.
-export default function InfoBoard({ event_title, event_description_brief, event_thumbnail_src, event_page_address }) {
+export default function InfoBoard(props) {
 
-    function InfoSingle() {
+    function InfoSingle({ event_title, event_description_brief, event_thumbnail_src, event_page_address, event_date }) {
         return (
-            <Link to={event_page_address}>
-                <div className="infosingle">
+            <div className="infosingle">
+                <Link to={event_page_address}>
                     <div className="infosingle-content">
-                        <img src={event_thumbnail_src} alt={event_title} />
-                        <h3>{event_title}</h3>
-                        <p>{event_description_brief}</p>
+                        <div className="infosingle-content-img-wrapper">
+                            <img src={event_thumbnail_src} alt={event_title} />
+                        </div>
+                        <p>{event_date}</p>
+                        <div className="infosingle-content-text-wrapper">
+                            <h3>{event_title}</h3>
+                            <p>{event_description_brief}</p>
+                        </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
+            </div>
         );
     }
 
-    // TODO: Props should also include ROUTE address
+    // test inputs
+    const sample_event = {
+        event_title: 'this is a sample long title which is very long and should not fit in the text area',
+        event_description_brief: 'This is a sample event that probably does not exist or failed to load the correct page for. Please update the website or not, does not matter.',
+        event_thumbnail_src: testImg,
+        event_page_address: 'sample-event',
+        event_date: 'July 1, 2025'
+    }
+    const another_sample_event = {
+        event_title: 'this is the second element with a bigger picture...but it fits in neatly!',
+        event_description_brief: 'This is a sample event that probably does not exist or failed to load the correct page for. Please update the website or not, does not matter. Though, you probably should check the issue or ask someone else to do so.',
+        event_thumbnail_src: '/kcrmlogo.png',
+        event_page_address: 'second-sample-event',
+        event_date: 'July 6, 2025'
+    }
+    const sample_event_array = [sample_event,another_sample_event,sample_event];
+
+    // TODO: sample_event_array should be replaced with props.contentData when possible.
     return (
-        <div className="infoboard">
-            <InfoSingle />
-            <InfoSingle />
-        </div>
+        <>
+            <h1>{props.title}</h1>
+            <div className="infoboard" style={{
+                    width: props.width,
+                    height:props.height,
+            }}>
+                {sample_event_array.map((singleData, index) => <InfoSingle {...singleData} />)}
+            </div>
+        </>
     );
 }

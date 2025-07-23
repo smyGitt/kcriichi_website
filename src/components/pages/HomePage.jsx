@@ -2,9 +2,22 @@ import './HomePage.css';
 import InfoBoard from '../InfoBoard';
 
 export default function HomePage() {
+
+  // TODO: Use props to alter each InfoBoard contents from database.
   return(
     <div>
-      <InfoBoard />
+      <InfoBoard 
+        title="Upcoming Events" 
+        width='100%' 
+        height='26rem'
+        card_count='3'
+        />
+      <InfoBoard 
+        title="Highlighted News" 
+        width='100%' 
+        height='26rem'
+        card_count='3'
+        />
     </div>
   );
 }
