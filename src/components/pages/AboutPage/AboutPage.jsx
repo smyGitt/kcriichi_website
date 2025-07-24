@@ -1,4 +1,4 @@
-import mrpresident from "../../assets/mrpresident.png";
+import mrpresident from "../../../assets/mrpresident.png";
 import "./AboutPage.css";
 
 export default function AboutPage() {

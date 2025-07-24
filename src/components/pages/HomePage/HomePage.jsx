@@ -1,5 +1,5 @@
 import './HomePage.css';
-import InfoBoard from '../InfoBoard';
+import InfoBoard from '../../InfoBoard/InfoBoard';
 
 export default function HomePage() {
 
@@ -8,15 +8,11 @@ export default function HomePage() {
     <div>
       <InfoBoard 
         title="Upcoming Events" 
-        width='100%' 
-        height='26rem'
-        cardCount='3'
+        boardType='multicard'
         />
       <InfoBoard 
         title="Highlighted News" 
-        width='100%' 
-        height='26rem'
-        cardCount='3'
+        boardType='multiCard'
         />
     </div>
   );

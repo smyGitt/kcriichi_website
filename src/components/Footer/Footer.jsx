@@ -1,9 +1,9 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
-import instagramLogo from '../assets/instagram.png'
-import discordLogo from '../assets/discord.png'
-import emailLogo from '../assets/email.png'
+import Navbar from '../Navbar/Navbar';
+import instagramLogo from '../../assets/instagram.png'
+import discordLogo from '../../assets/discord.png'
+import emailLogo from '../../assets/email.png'
 
 export default function Footer() {
     return (
