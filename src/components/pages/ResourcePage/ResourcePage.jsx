@@ -1,21 +1,41 @@
 import "./ResourcePage.css"
-import ResourceLinks from "./resourceLinks.js"
+import { resourceLinks } from "./resourceLinks.js"
 import Dropdown from "../../Dropdown/Dropdown.jsx";
-import { useState } from "react"
 
 export default function ResourcePage() {
-    
-    const [isDropped,setIsDropped] = useState([false,false,false]);
-    function onClickHandler() {
 
+    function renderResources(resources) {
+        const renderedLinks = [];
+        let index = 0;
+        for (const data of resources) {
+            renderedLinks.push(
+                <div key={index}>
+                    <a href={data.href}>{data.name}</a>
+                    <p>{data.desc}</p>
+                </div>
+            )
+            index++;
+        }
+        return renderedLinks;
     }
 
+    function renderDropdown() {
+        const sectionList = [];
+        let index = 0;
+        for (const section of resourceLinks) {
+            sectionList.push(
+                <Dropdown title={section.title} key={index}>
+                    {renderResources(section.resources)}
+                </Dropdown>
+            );
+            index++;
+        }
+        return sectionList;
+    }
 
     return(
-        <div>
-            <Dropdown title="General Resources" ></Dropdown>
-            <Dropdown title="Intermediate ~ Advanced Resources" ></Dropdown>
-            <Dropdown title="Calculator/Tool/Trainers" ></Dropdown>
-        </div>
+        <>
+            {renderDropdown()}
+        </>
     );
 }
