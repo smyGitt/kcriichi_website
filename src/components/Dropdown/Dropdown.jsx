@@ -1,9 +1,9 @@
 import "./Dropdown.css";
 import { useState } from "react";
 
-export default function Dropdown({ title = "Untitled", children}) {
+export default function Dropdown({ title = "Untitled", children }) {
     const [isDropped, setIsDropped] = useState(false);
-    
+
     function onClickHandler() {
         if (isDropped) { setIsDropped(false); }
         else { setIsDropped(true); }
@@ -12,9 +12,11 @@ export default function Dropdown({ title = "Untitled", children}) {
     return (
         <div className="dropdown">
             <h2 onClick={onClickHandler}>{title}</h2>
-            <div>
-                {isDropped?children:null}
-            </div>
+            {isDropped ? (
+                <div className="dropdown-content">
+                    {children}
+                </div>
+            ) : null}
         </div>
     );
 }

@@ -1,6 +1,41 @@
+.dropdown {
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+
 .dropdown h2{
-    display: flex;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(130, 7, 7);
+    margin: 0px;
     padding: 2%;
+    cursor: pointer;
+}
+
+.dropdown p {
+    color: rgb(130, 7, 7);
+    font-style: italic;
+    font-size: small;
+    padding-left: 2rem;
+}
+
+.dropdown a {
+    color: rgb(245, 25, 25);
+    text-decoration:underline;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.dropdown-content {
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 0.3rem solid rgb(130, 7, 7);
+    background-color: rgb(255, 251, 231);
+    position:relative;
+    max-width: 60rem;
     width: 100%;
+}
+
+.dropdown-content > * + * {
+  border-top: 1px dashed rgb(130, 7, 7);
+  padding-top: 1rem;
+  margin-top: 1rem;
 }

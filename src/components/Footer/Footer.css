@@ -1,8 +1,11 @@
 .footer {
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+
+    background-color: white;
+    position: sticky;
+    bottom: -12.6rem;
 }
 
 .footer-upper-wrapper {

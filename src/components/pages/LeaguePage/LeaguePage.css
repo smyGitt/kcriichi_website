@@ -1,0 +1,8 @@
+.league-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration p, a {
+    padding-left: 2rem;
+}

@@ -1,16 +1,11 @@
 .App {
-  display: flex;
+  display: grid;
   flex-direction: column;
-  margin:auto;
-  grid-template-columns: 100%;
+  margin: auto;
+  align-self: center;
+  justify-self: center;
   width: 60rem;
   height: 100%;
-  grid-template-rows: min-content;
-  list-style-type: none;
-  table-layout: fixed;
-  grid-auto-flow: row;
-  justify-content: center;
-  padding-top: 1%;
 }
 
 .App * {

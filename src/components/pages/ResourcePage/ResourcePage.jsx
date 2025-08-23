@@ -34,8 +34,8 @@ export default function ResourcePage() {
     }
 
     return(
-        <>
+        <div className="resource-page">
             {renderDropdown()}
-        </>
+        </div>
     );
 }

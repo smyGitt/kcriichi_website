@@ -1,0 +1,4 @@
+.resource-page {
+    display:flex;
+    flex-direction: column;
+}
