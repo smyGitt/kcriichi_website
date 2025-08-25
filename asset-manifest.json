@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/smyGitt.github.io/kcriichi_website/static/css/main.8d5ef0c2.css",
-    "main.js": "/smyGitt.github.io/kcriichi_website/static/js/main.75ee8e37.js",
+    "main.js": "/smyGitt.github.io/kcriichi_website/static/js/main.29ff894c.js",
     "static/js/453.7efa4519.chunk.js": "/smyGitt.github.io/kcriichi_website/static/js/453.7efa4519.chunk.js",
     "static/media/mrpresident.png": "/smyGitt.github.io/kcriichi_website/static/media/mrpresident.7007ac2ab5b7eecf5995.png",
     "static/media/gameboardclose.png": "/smyGitt.github.io/kcriichi_website/static/media/gameboardclose.cb3bae03ac1f7db2acff.png",
@@ -10,11 +10,11 @@
     "static/media/discord.png": "/smyGitt.github.io/kcriichi_website/static/media/discord.8757931c965332285757.png",
     "index.html": "/smyGitt.github.io/kcriichi_website/index.html",
     "main.8d5ef0c2.css.map": "/smyGitt.github.io/kcriichi_website/static/css/main.8d5ef0c2.css.map",
-    "main.75ee8e37.js.map": "/smyGitt.github.io/kcriichi_website/static/js/main.75ee8e37.js.map",
+    "main.29ff894c.js.map": "/smyGitt.github.io/kcriichi_website/static/js/main.29ff894c.js.map",
     "453.7efa4519.chunk.js.map": "/smyGitt.github.io/kcriichi_website/static/js/453.7efa4519.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d5ef0c2.css",
-    "static/js/main.75ee8e37.js"
+    "static/js/main.29ff894c.js"
   ]
 }
