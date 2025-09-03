@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom'; // NOT COMPATIBLE WITH GITHUB PAGES
+import { HashRouter } from 'react-router-dom'; // COMPATIBLE WITH GITHUB PAGES
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// IMPORTANT: SWITCH TO BrowserRouter WHEN NOT USING GITHUB PAGES.
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter> 
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

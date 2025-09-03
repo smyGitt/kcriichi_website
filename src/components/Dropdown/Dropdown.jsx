@@ -11,7 +11,7 @@ export default function Dropdown({ title = "Untitled", children }) {
 
     return (
         <div className="dropdown">
-            <h2 onClick={onClickHandler}>{title}</h2>
+            <h2 onClick={onClickHandler}  style={isDropped ? {borderRadius: "1px 1px 0px 0px"} : {borderRadius: "1px 1px 1px 1px"}}>{title}</h2>
             {isDropped ? (
                 <div className="dropdown-content">
                     {children}

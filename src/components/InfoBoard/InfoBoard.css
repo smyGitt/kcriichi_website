@@ -6,6 +6,7 @@
     text-decoration: none;
     column-gap: 0.5rem;
     overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .infosingle {

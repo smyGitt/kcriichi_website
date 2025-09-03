@@ -1,16 +1,52 @@
 .contact-page {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-page h1 {
-    grid-row: 0;
-    grid-column: 0;
+.contact-page input, textarea {
+    border: solid 1px black;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    resize: none;
 }
 
-.contact-textbox {
-    grid-row: 2;
-    grid-column: 0;
-    -ms-grid-column-span: 2;
-    resize: vertical;
-    min-height: 50%;
+#contact-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contact-header h1{
+    text-wrap: nowrap;
+    padding-right: 72%;
+}
+
+.info-name-email {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info-name-email > input {
+    width: 50%;
+    height: fit-content;
+    overflow-y: hidden;
+}
+
+.info-text {
+    display: flex;
+    width: 100%;
+}
+
+.info-text > textarea {
+    width: 100%;
+}
+
+.contact-send-form-btn {
+    display: flex;
+    width: 100%;
+}
+.contact-send-form-btn > input {
+    width: 100%;
 }

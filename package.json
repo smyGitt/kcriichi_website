@@ -1,7 +1,7 @@
 {
   "name": "kcriichi_website",
   "version": "0.1.0",
-  "homepage": "https://smygitt.github.io",
+  "homepage": "https://smyGitt.github.io/kcriichi_website",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

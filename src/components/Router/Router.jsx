@@ -8,8 +8,6 @@ import ContactPage from "../pages/ContactPage/ContactPage";
 
 
 export default function Router() {
-
-
     return(
         <Routes>
             <Route path="/" element={<HomePage />} />

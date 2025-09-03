@@ -1,0 +1,15 @@
+.footer-social-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-social-icon-wrapper img{
+    width: 2.3rem;
+}
+
+.footer-social-icon-wrapper a {
+    padding-left: 0;
+}

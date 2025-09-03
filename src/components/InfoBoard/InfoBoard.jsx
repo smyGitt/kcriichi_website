@@ -1,7 +1,8 @@
 import "./InfoBoard.css"
 import { Link } from "react-router-dom";
-import testImg from '../../assets/gameboardclose.png'
-import presidentImg from '../../assets/mrpresident.png'
+import testImg from '../../assets/gameboardclose.png';
+import presidentImg from '../../assets/mrpresident.png';
+import kcrmlogo from '../../assets/kcrmlogo.png';
 
 // TODO: test if varying lengths affect the layout.
 export default function InfoBoard(props) {
@@ -56,7 +57,7 @@ export default function InfoBoard(props) {
     const another_sample_event = {
         event_title: 'this is the second element with a bigger picture...but it fits in neatly!',
         event_description_brief: 'This is a sample event that probably does not exist or failed to load the correct page for. Please update the website or not, does not matter. Though, you probably should check the issue or ask someone else to do so.',
-        event_thumbnail_src: '/kcrmlogo.png',
+        event_thumbnail_src: kcrmlogo,
         event_page_address: 'second-sample-event',
         event_date: 'July 6, 2025'
     }

@@ -1,75 +1,22 @@
-.aboutpage {
-    text-align: left;
-    color: #272727;
-    margin-top:3rem;
-    border-bottom-style: dashed;
-    border-bottom-width: 1px;
-    
+#about-us-page {
+    margin-left: 1rem;
 }
 
-.aboutpage p {
-    text-indent: 2em;
-    padding-left: 4%;
-    padding-bottom: 4%;
+#about-us-page p {
+    margin-left: 1rem;
+    text-align: justify;
+    text-justify:inter-word;
 }
 
-.aboutpage-presidentName p {
-    text-indent: 0em;
-    padding-left: 0%;
-    padding-bottom: 0%;
-}
-
-.aboutpage h1{
-    padding-left: 14.3rem;
-    text-decoration:overline;
-}
-
-.aboutpage h3{
-    margin-top: 0rem;
-}
-
-.aboutpage-content {
+#mission-statement-image {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
 }
 
-.aboutpage-image-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-right: 2rem;
-}
-
-.aboutpage-image-wrapper img {
-    width: 5cm;
-    height: auto;
-}
-
-.aboutpage-image-wrapper p {
-    margin-top: 0%;
-    text-align: center;
-    font-size: 1.1rem;
-    font-style:italic;
-    color:#5e5e5e
-}
-
-@media (max-width: 800px) {
-    .aboutpage{
-        font-size: 0.8rem;
-        text-align: left;
-    }
-    .aboutpage h1 {
-        padding-left: 0rem;
-        text-align: center;
-    }
-    .aboutpage-content{
-        flex-direction: column;
-        align-items: center;
-    }
-    .aboutpage-image-wrapper{
-        justify-content: center;
-        padding-right: 0;
-    }
-    .aboutpage-image-wrapper img{
-        border-width: 0.15rem;
-    }
+#mission-statement-image > img {
+    width: auto;
+    height: 16rem;
+    margin-left: 1.5rem;
+    align-self: center;
+    border-radius: 10px;
 }
